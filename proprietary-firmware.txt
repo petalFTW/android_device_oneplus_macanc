@@ -1,7 +1,7 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
 ## are from OnePlus Ace 6T (PLR110_16.0.9.400(CN01)).
 
-abl.img;AB
+abl.img;AB|e51eb157f31e7f218904b512e4335215213482fc
 aop.img;AB
 aop_config.img;AB
 bluetooth.img;AB

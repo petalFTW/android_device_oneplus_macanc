@@ -36,6 +36,9 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'odm/etc/permissions/vendor-oplus-hardware-cryptoeng.xml': blob_fixup()
+        # Stock file has two <permissions> roots; merge into one well-formed document
+        .regex_replace(r'</permissions>\s*<permissions>', ''),
     'odm/etc/camera/CameraHWConfiguration.config': blob_fixup()
         # Disable face detection AE behaviour
         .regex_replace(r'(enableSWfdForThirdCamUnit += )TRUE', r'\1FALSE')
