@@ -4,14 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# petalOS: petal variant of the macanc build. Same device/base as lineage_macanc;
-# this is the target where petalOS-specific packages (GmsCompat, etc.) are added
-# so the clean Lineage target stays untouched.
-
-# Inherit the Lineage macanc product (device, telephony, Lineage common).
+# petal variant of the macanc build. lineage base + petal extras, keeps lineage_macanc clean.
 $(call inherit-product, device/oneplus/macanc/lineage_macanc.mk)
 
-# Approved Petal V3 3D boot animation, including native fade on boot completion.
+# Approved Petal V3 3D boot animation, native fade included.
 TARGET_BOOTANIMATION := vendor/lineage/bootanimation/petal.zip
 
 # GmsCompat (sandboxed Google Play Services).
@@ -24,12 +20,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     PetalHub
 
-# petalOS depth studio (3D lock screen: photo subject layered over the clock).
+# petalOS depth studio (3D lock screen photo thing).
 PRODUCT_PACKAGES += \
     PetalDepth
 
-# petalOS idle power policy (location -> battery-saving + app standby while screen off).
+# petalOS idle power policy (stops apps messing about while screen is off).
 PRODUCT_PACKAGES += \
     PetalPower
+
+# gms hog eats a verify filter on every cold start, compile the bastard at build time
+PRODUCT_DEXPREOPT_SPEED_APPS += GmsCompat
+
+# keep more apps warm so relaunches stop being cold
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    persist.device_config.activity_manager.max_cached_processes=48
 
 PRODUCT_NAME := petal_macanc
