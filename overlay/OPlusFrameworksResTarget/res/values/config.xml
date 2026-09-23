@@ -131,28 +131,28 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
-        <item>7.2</item>    <!--      0 - 1     -->
-        <item>14.4</item>   <!--      1 - 6     -->
-        <item>36.0</item>   <!--      6 - 10    -->
-        <item>120.0</item>  <!--     10 - 20    -->
-        <item>168.0</item>  <!--     20 - 30    -->
-        <item>192.0</item>  <!--     30 - 40    -->
-        <item>216.0</item>  <!--     40 - 50    -->
-        <item>240.0</item>  <!--     50 - 60    -->
-        <item>276.0</item>  <!--     60 - 70    -->
-        <item>288.0</item>  <!--     70 - 80    -->
-        <item>300.0</item>  <!--     80 - 90    -->
-        <item>312.0</item>  <!--     90 - 100   -->
-        <item>324.0</item>  <!--    100 - 150   -->
-        <item>336.0</item>  <!--    150 - 200   -->
-        <item>348.0</item>  <!--    200 - 300   -->
-        <item>360.0</item>  <!--    300 - 400   -->
-        <item>372.0</item>  <!--    400 - 500   -->
-        <item>384.0</item>  <!--    500 - 600   -->
-        <item>396.0</item>  <!--    600 - 700   -->
-        <item>408.0</item>  <!--    700 - 800   -->
-        <item>432.0</item>  <!--    800 - 900   -->
-        <item>456.0</item>  <!--    900 - 1000  -->
+        <item>8.28</item>   <!--      0 - 1     -->
+        <item>16.56</item>  <!--      1 - 6     -->
+        <item>41.4</item>   <!--      6 - 10    -->
+        <item>138.0</item>  <!--     10 - 20    -->
+        <item>193.2</item>  <!--     20 - 30    -->
+        <item>220.8</item>  <!--     30 - 40    -->
+        <item>248.4</item>  <!--     40 - 50    -->
+        <item>276.0</item>  <!--     50 - 60    -->
+        <item>317.4</item>  <!--     60 - 70    -->
+        <item>331.2</item>  <!--     70 - 80    -->
+        <item>345.0</item>  <!--     80 - 90    -->
+        <item>358.8</item>  <!--     90 - 100   -->
+        <item>372.6</item>  <!--    100 - 150   -->
+        <item>386.4</item>  <!--    150 - 200   -->
+        <item>400.2</item>  <!--    200 - 300   -->
+        <item>414.0</item>  <!--    300 - 400   -->
+        <item>427.8</item>  <!--    400 - 500   -->
+        <item>441.6</item>  <!--    500 - 600   -->
+        <item>455.4</item>  <!--    600 - 700   -->
+        <item>469.2</item>  <!--    700 - 800   -->
+        <item>496.8</item>  <!--    800 - 900   -->
+        <item>504.0</item>  <!--    900 - 1000, capped so it doesn't out-shine the 1000+ tier -->
         <item>504.0</item>  <!--   1000 - 1200  -->
         <item>552.0</item>  <!--   1200 - 1400  -->
         <item>600.0</item>  <!--   1400 - 1600  -->
