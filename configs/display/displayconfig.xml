@@ -19,9 +19,18 @@
 
         <minimumLux>10000</minimumLux>
         <timing>
-        <timeWindowSecs>1800</timeWindowSecs>  // Window in which we restrict HBM.
-        <timeMaxSecs>300</timeMaxSecs>         // Maximum time of HBM allowed in that window.
-        <timeMinSecs>60</timeMinSecs>          // Minimum time remaining required to switch
-        </timing>                              //   HBM on for.
+            <timeWindowSecs>1800</timeWindowSecs>
+            <timeMaxSecs>300</timeMaxSecs>
+            <timeMinSecs>60</timeMinSecs>
+        </timing>
     </highBrightnessMode>
+
+    <screenBrightnessRampFastDecrease>1.0</screenBrightnessRampFastDecrease>
+    <screenBrightnessRampFastIncrease>1.6</screenBrightnessRampFastIncrease>
+    <screenBrightnessRampSlowDecrease>0.5866142</screenBrightnessRampSlowDecrease>
+    <screenBrightnessRampSlowIncrease>1.2</screenBrightnessRampSlowIncrease>
+    <screenBrightnessRampSlowDecreaseIdle>0.5866142</screenBrightnessRampSlowDecreaseIdle>
+    <screenBrightnessRampSlowIncreaseIdle>1.2</screenBrightnessRampSlowIncreaseIdle>
+    <ambientLightHorizonLong>3000</ambientLightHorizonLong>
+    <ambientLightHorizonShort>500</ambientLightHorizonShort>
 </displayConfiguration>

@@ -49,7 +49,7 @@
          brightness changes occur in response to an observed change in light level that exceeds the
          hysteresis threshold. -->
     <integer name="config_autoBrightnessBrighteningLightDebounce">250</integer>
-    <integer name="config_autoBrightnessDarkeningLightDebounce">200</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">1500</integer>
 
     <!-- The maximum range of gamma adjustment possible using the screen
          auto-brightness adjustment setting. -->
@@ -131,9 +131,9 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
-        <item>8.28</item>   <!--      0 - 1     -->
-        <item>16.56</item>  <!--      1 - 6     -->
-        <item>41.4</item>   <!--      6 - 10    -->
+        <item>12.42</item>  <!--      0 - 1     -->
+        <item>24.84</item>  <!--      1 - 6     -->
+        <item>55.2</item>   <!--      6 - 10    -->
         <item>138.0</item>  <!--     10 - 20    -->
         <item>193.2</item>  <!--     20 - 30    -->
         <item>220.8</item>  <!--     30 - 40    -->
@@ -217,9 +217,9 @@
          the screen brightness is recalculated. See the config_ambientThresholdLevels
          description for how the constraint value is chosen. -->
     <integer-array name="config_ambientBrighteningThresholds">
-        <item>5000</item> <!--     0 - 50    -->
-        <item>1500</item> <!--    50 - 115   -->
-        <item>750</item>  <!--   115 - 500   -->
+        <item>200</item>  <!--     0 - 50    -->
+        <item>150</item>  <!--    50 - 150   -->
+        <item>750</item>  <!--   150 - 500   -->
         <item>600</item>  <!--   500 - 1000  -->
         <item>500</item>  <!--  1000 - 2000  -->
         <item>500</item>  <!--  2000 - 4000  -->
@@ -233,9 +233,9 @@
          the screen brightness is recalculated. See the config_ambientThresholdLevels
          description for how the constraint value is chosen. -->
     <integer-array name="config_ambientDarkeningThresholds">
-        <item>1</item>    <!--     0 - 50    -->
-        <item>50</item>   <!--    50 - 150   -->
-        <item>450</item>  <!--   115 - 500   -->
+        <item>200</item>  <!--     0 - 50    -->
+        <item>200</item>  <!--    50 - 150   -->
+        <item>450</item>  <!--   150 - 500   -->
         <item>500</item>  <!--   500 - 1000  -->
         <item>500</item>  <!--  1000 - 2000  -->
         <item>500</item>  <!--  2000 - 4000  -->
