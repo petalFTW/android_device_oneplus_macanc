@@ -38,6 +38,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     PetalDepth
 
+# CATBACK, android auto but ours. needs an AA apk fed to it once for the car identity
+PRODUCT_PACKAGES += \
+    Catback
+
 # petalOS flagship camera (overrides Aperture/Camera2).
 PRODUCT_PACKAGES += \
     PetalCam

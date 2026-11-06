@@ -1,0 +1,2 @@
+# qcom's neverallows won't let platform_app open the dsp nodes, that needs its own domain
+allow platform_app adsprpcd_file:dir { getattr search };
